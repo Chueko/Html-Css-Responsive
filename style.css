@@ -1,0 +1,520 @@
+/* 
+1.Pos
+2.ModelBox
+3.Fonts
+4.Visual Styles
+5. Misc
+*/
+:root {
+  /* colors */
+  --bitcoin-orange: #f7931a;
+  --soft-orange: #ffe9d4;
+  --secondary-blue: #1a9af7;
+  --soft-blue: #e7f5ff;
+  --warm-black: #201e1c;
+  --black: #282623;
+  --gray: #bababa;
+  --off-white: #faf8f7;
+  --white: #ffffff;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+  font-family: "DM Sans", sans-serif;
+}
+
+header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-width: 320px;
+  min-height: 334px;
+  padding-right: 1.6rem;
+  text-align: center;
+  background: linear-gradient(207.8deg, #201e1c 16.69%, #f7931a 100%);
+}
+header img {
+  width: 150px;
+  height: 24px;
+  margin-top: 60px;
+  align-self: center;
+}
+.headerContainer {
+  width: 90%;
+  min-width: 288px;
+  max-width: 900px;
+  height: 218px;
+  margin-top: 40px;
+  text-align: center;
+  align-self: center;
+}
+.headerContainer h1 {
+  font-weight: 700;
+  color: var(--white);
+  font-size: 2.4rem;
+  line-height: 2.6rem;
+}
+
+.headerContainer p {
+  font-weight: 500;
+  color: var(--soft-orange);
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  margin-top: 25px;
+}
+.headerContainer .headerButton {
+  position: absolute;
+  top: 280px;
+  left: calc(50% - 118px);
+  display: block;
+  margin-top: 35px;
+  padding: 15px;
+  width: 229px;
+  height: 48px;
+  background-color: var(--off-white);
+  /* Shadows */
+  box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+  border: none;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--black);
+}
+
+.headerButton span {
+  display: inline-block;
+  width: 13px;
+  height: 8px;
+  margin-left: 10px;
+  background-image: url("./assets/icons/downArrow.svg");
+}
+
+main {
+  min-width: 288px;
+  height: auto;
+  background-color: var(--off-white);
+}
+.firstSection {
+  width: 100%;
+  height: auto;
+  padding-top: 80px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.textFirstSection {
+  width: 90%;
+  min-width: 228px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.imgBackground {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  background-image: url(./assets/Bitcoin.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.textFirstSection h2 {
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 2.4rem;
+  line-height: 2.6rem;
+  text-align: center;
+  color: var(--black);
+}
+.textFirstSection p {
+  margin-bottom: 30px;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  text-align: center;
+  color: #757575;
+}
+.tableContainer {
+  display: flex;
+  height: 380px;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  gap: 10px;
+  scroll-snap-type: x proximity;
+  margin: 0 45px;
+
+}
+.mainCurrTable {
+  scroll-snap-align: center;
+  width: 70%;
+  min-width: 235px;
+  max-width: 500px;
+  height: 360px;
+  
+  font-family: "Inter", sans-serif;
+}
+.mainCurrTable .currTableTittle {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 2.3rem;
+  color: var(--bitcoin-orange);
+}
+.mainCurrTable .comTableTittle {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 2.3rem;
+  color: var(--secondary-blue);
+}
+.currTableCont {
+  width: 90%;
+  min-width: 230px;
+  max-width: 300px;
+  height: 250px;
+  margin: 0 auto;
+}
+.currTableCont table {
+  width: 100%;
+  height: 100%;
+}
+.currTableCont td {
+  width: 50%;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.9rem;
+  color: var(--gray);
+  background-color: var(--white);
+}
+.currTableCont .tableTopLeft {
+  border-top-left-radius: 8px;
+}
+.currTableCont .tableTopRight {
+  border-top-right-radius: 8px;
+}
+.currTableCont .tableBottomLeft {
+  border-bottom-left-radius: 8px;
+}
+.currTableCont .tableBottomRight {
+  border-bottom-right-radius: 8px;
+}
+.currTableCont .tableRight {
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #757575;
+}
+.currTableCont .down {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-left: 10px;
+  background-image: url(./assets/icons/trending-down.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.currTableCont .up {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-left: 10px;
+  background-image: url(./assets/icons/trending-up.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.currTableDate {
+  width: 190px;
+  height: 30px;
+  margin: 0 auto;
+  margin-top: 15px;
+  padding: 8px;
+  background-color: var(--soft-orange);
+  border-radius: 8px;
+}
+.currTableDate p {
+  font-weight: normal;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  color: var(--warm-black);
+}
+.comTableDate {
+  width: 190px;
+  height: 30px;
+  margin: 0 auto;
+  margin-top: 15px;
+  padding: 8px;
+  background-color: var(--soft-blue);
+  border-radius: 8px;
+}
+.comTableDate p {
+  font-weight: normal;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  color: var(--warm-black);
+}
+
+.modulesContainer {
+  position: relative;
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  padding: 20px 10px;
+  background-color: var(--warm-black);
+}
+
+.modulesContainer img {
+  position: absolute;
+  width: 40px;
+  height: 25px;
+  top: -10px;
+  left: calc(50% - 20px);
+}
+.preamble {
+  width: 90%;
+  min-width: 288px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 50px;
+  color: var(--white);
+  text-align: center;
+}
+.preamble h2 {
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 2.4rem;
+  line-height: 2.6rem;
+}
+.preamble p {
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: #808080;
+}
+
+.modulesDescriptions .textBox {
+  width: 90%;
+  min-width: 288px;
+  max-width: 400px;
+  height: 150px;
+  margin: 15px auto;
+  padding: 15px;
+  background-color: var(--black);
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+}
+.modulesDescriptions .logoClock {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-bottom: 10px;
+  background-image: url("./assets/icons/clock.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.modulesDescriptions .logoDolar {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-bottom: 10px;
+  background-image: url("./assets/icons/dollar-sign.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.modulesDescriptions .logoCheck {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-bottom: 10px;
+  background-image: url("./assets/icons/check-circle.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.modulesDescriptions .logoEye {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-bottom: 10px;
+  background-image: url("./assets/icons/eye.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.textBox h3 {
+  font-weight: bold;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  color: var(--white);
+  margin-bottom: 10px;
+}
+.textBox p {
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: #808080;
+}
+
+.section-three {
+  width: 100%;
+  min-width: 288px;
+  height: 50vh;
+  background-image: url(./assets/bitcoinbaby.png);
+  text-align: center;
+  padding-top: 64px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.section-three h2 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: bold;
+  font-size: 2.4rem;
+  line-height: 2.6rem;
+  color: var(--white);
+}
+#ultima {
+  width: 100%;
+  padding-bottom: 70px;
+  min-width: 320px;
+  max-width: 900px;
+  height: auto;
+  text-align: center;
+  margin: 0 auto;
+}
+.planText {
+  width: 90%;
+  min-width: 288px;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.planText h2 {
+  font-family: "DM Sans", sans-serif;
+  padding-top: 50px;
+  font-weight: bold;
+  font-size: 2.4rem;
+  line-height: 2.6rem;
+  color: var(--black);
+}
+.planText p {
+  padding-top: 30px;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: #757575;
+}
+.plans-container-slider {
+  display: flex;
+  height: 320px;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  gap: 10px;
+  scroll-snap-type: x proximity;
+}
+.plans-container-card {
+  position: relative;
+  scroll-snap-align: center;
+  width: 70%;
+  min-width: 190px;
+  max-width: 300px;
+  height: 250px;
+  margin: 50px auto 0;
+  padding: 0 15px;
+  background-color: var(--white);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+}
+.recomended {
+  position: absolute;
+  width: 120px;
+  height: 31px;
+  padding: 6px;
+  top: -15px;
+  left: calc(50% - 60px);
+  font-size: 1.2rem;
+  background-color: var(--bitcoin-orange);
+  border-radius: 8px;
+  color: var(--white);
+}
+.plan-card-title {
+  padding-top: 30px;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: black;
+}
+.plan-card-price {
+  padding: 5px 0;
+  font-size: 5.2rem;
+  font-weight: bold;
+  line-height: 5rem;
+  color: black;
+}
+.plan-card-price span {
+  font-size: 1.2rem;
+  font-weight: 300;
+  position: relative;
+  top: -28px;
+}
+.plan-card-saving {
+  font-size: 1.2rem;
+  color: #757575;
+}
+.plan-card--ca {
+  width: 150px;
+  height: 48px;
+  margin-top: 20px;
+  background-color: #faf8f7;
+  border-radius: 4px;
+  border: 2px solid var(--bitcoin-orange);
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+  font-family: "DM Sans", sans-serif;
+}
+.plan-card--ca span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url(./assets/icons/arrow-right.svg);
+  vertical-align: text-bottom;
+}
+footer {
+  display: flex;
+  width: 100%;
+  height: 150px;
+  background-color: var(--bitcoin-orange);
+}
+footer section {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .left ul {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  list-style: none;
+  color: var(--white);
+}
+.left li {
+  margin: 10px 0;
+}
+.left a {
+  text-decoration: none;
+}

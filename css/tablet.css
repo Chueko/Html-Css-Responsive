@@ -1,0 +1,15 @@
+.tableContainer{
+    display: flex;
+    width: 930px;
+    margin: 0 auto;
+}
+.modulesDescriptions {
+    display: flex;
+    flex-wrap: wrap;
+    width: 930px;
+    margin: 0 auto;
+}
+
+.plans-container-slider{
+    justify-content: center;
+}
